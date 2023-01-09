@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier__c</fullName>
+    <description>Enter the supplier of the circuit.</description>
+    <externalId>false</externalId>
+    <label>Supplier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BT Wholesale</fullName>
+                <default>false</default>
+                <label>BT Wholesale</label>
+            </value>
+            <value>
+                <fullName>CityFibre</fullName>
+                <default>false</default>
+                <label>CityFibre</label>
+            </value>
+            <value>
+                <fullName>Colt</fullName>
+                <default>false</default>
+                <label>Colt</label>
+            </value>
+            <value>
+                <fullName>Giganet Local</fullName>
+                <default>false</default>
+                <label>Giganet Local</label>
+            </value>
+            <value>
+                <fullName>Glide</fullName>
+                <default>false</default>
+                <label>Glide</label>
+            </value>
+            <value>
+                <fullName>Openreach</fullName>
+                <default>false</default>
+                <label>Openreach</label>
+            </value>
+            <value>
+                <fullName>SSE</fullName>
+                <default>false</default>
+                <label>Neos</label>
+            </value>
+            <value>
+                <fullName>TTB</fullName>
+                <default>false</default>
+                <label>TTB</label>
+            </value>
+            <value>
+                <fullName>Virgin Media</fullName>
+                <default>false</default>
+                <label>Virgin Media</label>
+            </value>
+            <value>
+                <fullName>Virtual 1</fullName>
+                <default>false</default>
+                <label>Virtual 1</label>
+            </value>
+            <value>
+                <fullName>Zen</fullName>
+                <default>false</default>
+                <label>Zen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

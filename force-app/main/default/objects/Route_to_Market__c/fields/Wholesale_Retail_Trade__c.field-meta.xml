@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wholesale_Retail_Trade__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Wholesale &amp; Retail Trade</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

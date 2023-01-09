@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cease_Request</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Lookup__c</columns>
+    <columns>Circuit_Reference__c</columns>
+    <columns>Customer_Request_Cease_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Sales_Support_Request__c.Cease_Request</value>
+    </filters>
+    <label>Cease Request</label>
+</ListView>

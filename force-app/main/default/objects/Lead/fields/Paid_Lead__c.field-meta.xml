@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_Lead__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>An ID associated with this lead from the paid lead source</description>
+    <externalId>false</externalId>
+    <inlineHelpText>An ID associated with this lead from the paid lead source</inlineHelpText>
+    <label>Paid Lead Reference ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

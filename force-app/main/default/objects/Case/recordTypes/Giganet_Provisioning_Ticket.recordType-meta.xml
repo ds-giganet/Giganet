@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Provisioning_Ticket</fullName>
+    <active>true</active>
+    <businessProcess>Giganet Provisioning</businessProcess>
+    <label>Giganet Provisioning Ticket</label>
+    <picklistValues>
+        <picklist>CRF_Status__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with Fields%3A General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with Fields%3A Installation %26 Location Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with Fields%3A Installation Location Hazard Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with Fields%3A Landlord%2FWayleave Detail Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required%3A Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required%3A Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Status__c</picklist>
+        <values>
+            <fullName>Contract Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Signed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Direct_Debit__c</picklist>
+        <values>
+            <fullName>Existing Customer%2FNot Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required%3A Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required%3A Set-Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Escalation_level__c</picklist>
+        <values>
+            <fullName>BAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GN_Order_Type__c</picklist>
+        <values>
+            <fullName>Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Provide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Modify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GN_Provisioning_Status__c</picklist>
+        <values>
+            <fullName>0%2E0 - Contract sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E6 - Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E8 - Waiting to be placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0 - Ordered with supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E1 - Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E2 - Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E3 - ECC%2FTRC Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E4 - Wayleave Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5 - Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E0 - Build</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E1 - Fit %26 Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E0 - Build Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E1 - Billing Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E2 - Job Complete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provisioning_Status__c</picklist>
+        <values>
+            <fullName>Billing Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery - Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery - Works in progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECC%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover To Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold - Waiting to be placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre Provisioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting to be placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wayleave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ticket_Type__c</picklist>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

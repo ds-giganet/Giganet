@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_minimum_term_set</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  OR(
+    NOT(ISBLANK( Monthly_Contract_GP__c )),
+    NOT(ISBLANK( Monthly_Contract_Revenue__c  ))
+  ),
+  OR(
+    Monthly_Contract_GP__c &lt;&gt; 0,
+    Monthly_Contract_Revenue__c &lt;&gt; 0
+  ),
+  OR(
+    ISBLANK( Contract_Term__c ),
+    Contract_Term__c = 0
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Contract_Term__c</errorDisplayField>
+    <errorMessage>Please ensure that the minimum term is set if you have completed the monthly revenue/profit figures</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Giganet",
+  "namespace": "",
+  "sfdcLoginUrl": "https://m12--dev.sandbox.my.salesforce.com",
+  "sourceApiVersion": "54.0"
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Internet</fullName>
+    <active>true</active>
+    <label>Giganet Internet</label>
+    <picklistValues>
+        <picklist>Router__c</picklist>
+        <values>
+            <fullName>Juniper EX2300-C-12T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper EX4300-24T 10GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper SRX300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper SRX340</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuperHub 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supplier__c</picklist>
+        <values>
+            <fullName>BT Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CityFibre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giganet Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Openreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>ADSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTTP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEASEDLINE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

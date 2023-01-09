@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ddm__Social_Profiles_Contact</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Social Profiles</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>var script = document.createElement(&quot;script&quot;);
+script.type = &quot;text/javascript&quot;;
+script.onload = loadScripts;
+script.src = &quot;https://sf.crmconnector.net/v2/Scripts/EmailMarketing_v4.js&quot;;
+document.getElementsByTagName(&quot;head&quot;)[0].appendChild(script);
+
+function loadScripts() {
+    LoadSalesforceScripts(scriptsLoaded);
+}
+
+function scriptsLoaded() {
+    OpenSocialProfiles({
+        Email: &quot;{!HTMLENCODE(Contact.Email)}&quot;,
+        OrganisationId: &quot;{!HTMLENCODE($Organization.Id)}&quot;,
+        SessionId: &quot;{!HTMLENCODE($Api.Session_ID)}&quot;,
+        PartnerUrl: &quot;{!HTMLENCODE($Api.Partner_Server_URL_140)}&quot;
+    });
+}</url>
+</WebLink>

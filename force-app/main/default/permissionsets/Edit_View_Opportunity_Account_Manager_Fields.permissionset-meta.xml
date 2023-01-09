@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission to allow certain users who are not account managers or Admins to view account manager fields on the opportunity</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Previous_Opportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Total_Contract_GP_Change__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Total_Contract_Revenue_Change__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Edit/View Opportunity Account Manager Fields</label>
+    <license>Salesforce</license>
+</PermissionSet>

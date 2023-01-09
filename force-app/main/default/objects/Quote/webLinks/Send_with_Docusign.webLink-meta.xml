@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_with_Docusign</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Send with Docusign</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://www.appextremes.com/apps/Conga/PointMerge.aspx
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Quote.Id}
+&amp;TemplateId=a0Gb0000000A5sW
+&amp;defaultPDF=1
+&amp;lg4=1
+&amp;ofn={!Quote.Name}+For+{!Quote.QuoteToName}
+&amp;docusignvisible=1
+&amp;docusignr1id={!Quote.Quote_Contact__c}
+&amp;docusignr1role=Signer+1
+&amp;docusigncustomfield1=dsfs__custom_field_1_name__c
+&amp;docusigncustomfieldvalue1=##Quote
+&amp;docusigncustomfield2=dsfs__custom_field_1_value__c
+&amp;docusigncustomfieldvalue2={!Quote.Id}
+&amp;ds7=7</url>
+</WebLink>

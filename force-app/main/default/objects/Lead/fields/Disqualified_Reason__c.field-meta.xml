@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualified_Reason__c</fullName>
+    <description>Reason for the lead becoming disqualified</description>
+    <externalId>false</externalId>
+    <label>Disqualified Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No interest</fullName>
+                <default>false</default>
+                <label>No interest</label>
+            </value>
+            <value>
+                <fullName>FTTP not available</fullName>
+                <default>false</default>
+                <label>FTTP Not Available</label>
+            </value>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+            <value>
+                <fullName>Credit Check Failed</fullName>
+                <default>false</default>
+                <label>Credit Check Failed</label>
+            </value>
+            <value>
+                <fullName>Duplicate Contact</fullName>
+                <default>false</default>
+                <label>Duplicate Contact</label>
+            </value>
+            <value>
+                <fullName>HQ Overseas</fullName>
+                <default>false</default>
+                <label>HQ Overseas</label>
+            </value>
+            <value>
+                <fullName>Located in serviced Office</fullName>
+                <default>false</default>
+                <label>Located in serviced Office</label>
+            </value>
+            <value>
+                <fullName>Location not served by us</fullName>
+                <default>false</default>
+                <label>Location not served by us</label>
+            </value>
+            <value>
+                <fullName>No longer in business</fullName>
+                <default>false</default>
+                <label>No longer in business</label>
+            </value>
+            <value>
+                <fullName>Parent group makes decisions</fullName>
+                <default>false</default>
+                <label>Parent group makes decisions</label>
+            </value>
+            <value>
+                <fullName>Price Benchmarking</fullName>
+                <default>false</default>
+                <label>Price Benchmarking</label>
+            </value>
+            <value>
+                <fullName>Too Large</fullName>
+                <default>false</default>
+                <label>Too Large</label>
+            </value>
+            <value>
+                <fullName>Too Small</fullName>
+                <default>false</default>
+                <label>Too Small</label>
+            </value>
+            <value>
+                <fullName>Uncontactable</fullName>
+                <default>false</default>
+                <label>Uncontactable</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe from e-mail</fullName>
+                <default>false</default>
+                <label>Unsubscribe from e-mail</label>
+            </value>
+            <value>
+                <fullName>Unsuitable customer industry</fullName>
+                <default>false</default>
+                <label>Unsuitable customer industry</label>
+            </value>
+            <value>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+                <label>Wrong Contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

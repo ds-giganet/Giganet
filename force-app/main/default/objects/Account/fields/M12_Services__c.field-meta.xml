@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M12_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>M12 Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internet</fullName>
+                <default>false</default>
+                <label>Internet</label>
+            </value>
+            <value>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <fullName>NGN</fullName>
+                <default>false</default>
+                <label>NGN</label>
+            </value>
+            <value>
+                <fullName>Phone Calls</fullName>
+                <default>false</default>
+                <label>Phone Calls</label>
+            </value>
+            <value>
+                <fullName>Phone Lines</fullName>
+                <default>false</default>
+                <label>Phone Lines</label>
+            </value>
+            <value>
+                <fullName>Phone System</fullName>
+                <default>false</default>
+                <label>Phone System</label>
+            </value>
+            <value>
+                <fullName>Phone System Maintenance</fullName>
+                <default>false</default>
+                <label>Phone System Maintenance</label>
+            </value>
+            <value>
+                <fullName>Wi-Fi</fullName>
+                <default>false</default>
+                <label>Wi-Fi</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

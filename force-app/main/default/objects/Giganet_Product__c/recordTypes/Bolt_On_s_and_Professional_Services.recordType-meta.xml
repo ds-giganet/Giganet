@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bolt_On_s_and_Professional_Services</fullName>
+    <active>true</active>
+    <label>Handsets, Bolt On&apos;s and Professional Services</label>
+    <picklistValues>
+        <picklist>Router__c</picklist>
+        <values>
+            <fullName>Juniper EX2300-C-12T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper SRX300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper SRX340</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supplier__c</picklist>
+        <values>
+            <fullName>Telcoswitch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Bolt-On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Number Porting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_System_Call_Centre__c</fullName>
+    <externalId>false</externalId>
+    <label>Phone System Call Centre</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CallMedia Enterprise</fullName>
+                <default>false</default>
+                <label>CallMedia Enterprise</label>
+            </value>
+            <value>
+                <fullName>CallMedia for Maximiser</fullName>
+                <default>false</default>
+                <label>CallMedia for Maximiser</label>
+            </value>
+            <value>
+                <fullName>SpliceCom Vision</fullName>
+                <default>false</default>
+                <label>SpliceCom Vision</label>
+            </value>
+            <value>
+                <fullName>ShoreTel ECC</fullName>
+                <default>false</default>
+                <label>ShoreTel ECC</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

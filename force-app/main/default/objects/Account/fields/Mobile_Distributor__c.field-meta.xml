@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Distributor__c</fullName>
+    <externalId>false</externalId>
+    <label>Mobile Distributor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aerial</fullName>
+                <default>false</default>
+                <label>Aerial</label>
+            </value>
+            <value>
+                <fullName>Daisy</fullName>
+                <default>false</default>
+                <label>Daisy</label>
+            </value>
+            <value>
+                <fullName>Gamma</fullName>
+                <default>false</default>
+                <label>Gamma</label>
+            </value>
+            <value>
+                <fullName>TMS</fullName>
+                <default>false</default>
+                <label>TMS</label>
+            </value>
+            <value>
+                <fullName>Vodafone</fullName>
+                <default>false</default>
+                <label>Vodafone</label>
+            </value>
+            <value>
+                <fullName>Plan</fullName>
+                <default>false</default>
+                <label>Plan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

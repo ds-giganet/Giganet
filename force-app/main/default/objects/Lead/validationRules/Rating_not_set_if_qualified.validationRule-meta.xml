@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating_not_set_if_qualified</fullName>
+    <active>true</active>
+    <description>Check that the rating has been set if qualified</description>
+    <errorConditionFormula>AND(ISPICKVAL( Status , &quot;Qualified&quot;),OR(ISPICKVAL( Rating , &quot;&quot;), ISPICKVAL( Rating , &quot;Incomplete&quot;)))</errorConditionFormula>
+    <errorDisplayField>Rating</errorDisplayField>
+    <errorMessage>You must set the rating if you have qualified the lead</errorMessage>
+</ValidationRule>

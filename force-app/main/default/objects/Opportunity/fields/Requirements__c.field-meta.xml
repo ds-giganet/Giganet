@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requirements__c</fullName>
+    <externalId>false</externalId>
+    <label>Requirements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phone system</fullName>
+                <default>false</default>
+                <label>Phone System (Legacy)</label>
+            </value>
+            <value>
+                <fullName>Phone System (Ancillary items)</fullName>
+                <default>false</default>
+                <label>Phone System (Ancillary items)</label>
+            </value>
+            <value>
+                <fullName>Headsets</fullName>
+                <default>false</default>
+                <label>Phone System (Headsets)</label>
+            </value>
+            <value>
+                <fullName>Network</fullName>
+                <default>false</default>
+                <label>Network Services</label>
+            </value>
+            <value>
+                <fullName>DBX Managed</fullName>
+                <default>false</default>
+                <label>DBX Managed</label>
+            </value>
+            <value>
+                <fullName>DBX Lite</fullName>
+                <default>false</default>
+                <label>DBX Lite</label>
+            </value>
+            <value>
+                <fullName>DBX Contact Centre</fullName>
+                <default>false</default>
+                <label>DBX Contact Centre</label>
+            </value>
+            <value>
+                <fullName>Giganet Connect</fullName>
+                <default>false</default>
+                <label>Giganet Connect</label>
+            </value>
+            <value>
+                <fullName>Giganet Broadband</fullName>
+                <default>false</default>
+                <label>Giganet Broadband</label>
+            </value>
+            <value>
+                <fullName>Giganet Ethernet</fullName>
+                <default>false</default>
+                <label>Giganet Ethernet</label>
+            </value>
+            <value>
+                <fullName>Giganet Hardware</fullName>
+                <default>false</default>
+                <label>Giganet Hardware</label>
+            </value>
+            <value>
+                <fullName>Giganet MPLS</fullName>
+                <default>false</default>
+                <label>Giganet MPLS</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+                <label>Giganet Mobile</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>M12 Energy</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Contact Centre</fullName>
+                <default>false</default>
+                <label>Contact Centre (Legacy)</label>
+            </value>
+            <value>
+                <fullName>Hardware (Other)</fullName>
+                <default>false</default>
+                <label>Hardware (Other)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

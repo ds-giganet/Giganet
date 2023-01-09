@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_ONT_Available__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Tell us how easy the installation will be. Allows us to target lower cost installations.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tells us if the property has or had FTTP.</inlineHelpText>
+    <label>Existing ONT Available</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

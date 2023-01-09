@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_Lead_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Paid Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved Index</fullName>
+                <default>false</default>
+                <label>Approved Index</label>
+            </value>
+            <value>
+                <fullName>Corpdata</fullName>
+                <default>false</default>
+                <label>Corpdata</label>
+            </value>
+            <value>
+                <fullName>Education Company</fullName>
+                <default>false</default>
+                <label>Education Company</label>
+            </value>
+            <value>
+                <fullName>Fulcio</fullName>
+                <default>false</default>
+                <label>Fulcio</label>
+            </value>
+            <value>
+                <fullName>Lead Forensics</fullName>
+                <default>false</default>
+                <label>Lead Forensics</label>
+            </value>
+            <value>
+                <fullName>LGS</fullName>
+                <default>false</default>
+                <label>LGS</label>
+            </value>
+            <value>
+                <fullName>Market Expert</fullName>
+                <default>false</default>
+                <label>Market Expert</label>
+            </value>
+            <value>
+                <fullName>Office Moves</fullName>
+                <default>false</default>
+                <label>Office Moves</label>
+            </value>
+            <value>
+                <fullName>Pursuit Marketing</fullName>
+                <default>false</default>
+                <label>Pursuit Marketing</label>
+            </value>
+            <value>
+                <fullName>RHAM Group</fullName>
+                <default>false</default>
+                <label>RHAM Group</label>
+            </value>
+            <value>
+                <fullName>Software Advisory Services</fullName>
+                <default>false</default>
+                <label>Software Advisory Services</label>
+            </value>
+            <value>
+                <fullName>Zone Marketing</fullName>
+                <default>false</default>
+                <label>Zone Marketing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

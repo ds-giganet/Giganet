@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Limit_Override__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a field to override the credit safe&apos;s contract limit in case that we want to accept the business but the credit safe contract limit field is too low.</inlineHelpText>
+    <label>Contract Limit Override</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

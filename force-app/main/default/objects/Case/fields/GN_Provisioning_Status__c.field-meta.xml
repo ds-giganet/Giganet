@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GN_Provisioning_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>GN Provisioning Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0.0 - Contract sent</fullName>
+                <default>false</default>
+                <label>0.0 - Pre-Provisioning</label>
+            </value>
+            <value>
+                <fullName>1.6 - Cancellation</fullName>
+                <default>false</default>
+                <label>1.6 - Cancellation</label>
+            </value>
+            <value>
+                <fullName>1.8 - Waiting to be placed</fullName>
+                <default>false</default>
+                <label>1.8 - Waiting to be placed</label>
+            </value>
+            <value>
+                <fullName>2.0 - Ordered with supplier</fullName>
+                <default>false</default>
+                <label>2.0 - Ordered with supplier</label>
+            </value>
+            <value>
+                <fullName>2.1 - Planning</fullName>
+                <default>false</default>
+                <label>2.1 - Planning</label>
+            </value>
+            <value>
+                <fullName>2.2 - Survey</fullName>
+                <default>false</default>
+                <label>2.2 - Survey</label>
+            </value>
+            <value>
+                <fullName>2.3 - ECC/TRC Approval</fullName>
+                <default>false</default>
+                <label>2.3 - ECC/TRC Approval</label>
+            </value>
+            <value>
+                <fullName>2.4 - Wayleave Approval</fullName>
+                <default>false</default>
+                <label>2.4 - Wayleave Approval</label>
+            </value>
+            <value>
+                <fullName>2.5 - Delay</fullName>
+                <default>false</default>
+                <label>2.5 - Delay</label>
+            </value>
+            <value>
+                <fullName>3.0 - Build</fullName>
+                <default>false</default>
+                <label>3.0 - Build</label>
+            </value>
+            <value>
+                <fullName>3.1 - Fit &amp; Test</fullName>
+                <default>false</default>
+                <label>3.1 - Fit &amp; Test</label>
+            </value>
+            <value>
+                <fullName>4.0 - Build Complete</fullName>
+                <default>false</default>
+                <label>4.0 - Build Complete</label>
+            </value>
+            <value>
+                <fullName>4.1 - Billing Complete</fullName>
+                <default>false</default>
+                <label>4.1 - Billing Complete</label>
+            </value>
+            <value>
+                <fullName>4.2 - Job Complete</fullName>
+                <default>false</default>
+                <label>4.2 - Job Complete</label>
+            </value>
+            <value>
+                <fullName>1.0 - New Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.0 - New Order</label>
+            </value>
+            <value>
+                <fullName>1.1 - Credit Check</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.1 - Credit Check</label>
+            </value>
+            <value>
+                <fullName>1.2 - CRF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.2 - CRF</label>
+            </value>
+            <value>
+                <fullName>1.3 - Direct Debit/Payment terms</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.3 - Direct Debit/Payment terms</label>
+            </value>
+            <value>
+                <fullName>1.4 - DCMS Voucher</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.4 - DCMS Voucher</label>
+            </value>
+            <value>
+                <fullName>1.5 - Delay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.5 - Delay</label>
+            </value>
+            <value>
+                <fullName>1.7 - Delay COVID</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1.7 - Delay COVID</label>
+            </value>
+            <value>
+                <fullName>2.6 - Delay Covid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2.6 - Delay Covid</label>
+            </value>
+            <value>
+                <fullName>3.2 - Delay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3.2 - Delay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

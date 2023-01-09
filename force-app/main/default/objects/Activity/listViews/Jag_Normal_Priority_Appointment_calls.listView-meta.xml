@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jag_Normal_Priority_Appointment_calls</fullName>
+    <columns>TASK.SUBJECT</columns>
+    <columns>TASK.WHO_NAME</columns>
+    <columns>TASK.DUE_DATE</columns>
+    <columns>TASK.TYPE</columns>
+    <columns>TASK.STATUS</columns>
+    <columns>Task_Outcome__c</columns>
+    <columns>TASK.PRIORITY</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>TASK.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TASK.PRIORITY</field>
+        <operation>equals</operation>
+        <value>Normal</value>
+    </filters>
+    <filters>
+        <field>TASK.TYPE</field>
+        <operation>equals</operation>
+        <value>Appointment</value>
+    </filters>
+    <filters>
+        <field>TASK.STATUS</field>
+        <operation>contains</operation>
+        <value>Not Started,In Progress</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>jdigwa</value>
+    </filters>
+    <label>Jag Normal Priority Appointment calls</label>
+</ListView>

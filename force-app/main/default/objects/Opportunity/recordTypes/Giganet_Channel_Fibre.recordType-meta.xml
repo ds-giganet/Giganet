@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Channel_Fibre</fullName>
+    <active>true</active>
+    <businessProcess>Giganet Leased Line</businessProcess>
+    <label>Giganet Channel Fibre</label>
+    <picklistValues>
+        <picklist>Commission_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clawed Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clawed Back - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payable - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canvassing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data - Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee_initiative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Lead Forensics Adwords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memership Organsiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Networking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Lead Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website_Adwords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website_Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Interest__c</picklist>
+        <values>
+            <fullName>Broadband</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethernet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone system hosted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone system maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone system on premise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Type__c</picklist>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Rental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Delayed_Detail__c</picklist>
+        <values>
+            <fullName>Customer Request Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Site Move Delayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Waiting for Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Waiting on Prerequisite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer no Resource</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 no Resource</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Lost__c</picklist>
+        <values>
+            <fullName>Budget lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled - ECCs declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled - Wayleave Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition better solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition existing relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Check Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price too little</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price too much</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product or Service not good fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Superseded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too late</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Requirements__c</picklist>
+        <values>
+            <fullName>Giganet Broadband</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giganet Ethernet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giganet Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giganet MPLS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supplier__c</picklist>
+        <values>
+            <fullName>BT Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CityFibre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giganet Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Openreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support__c</picklist>
+        <values>
+            <fullName>Annually</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>AMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RenewalRetention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RenewalUpgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Network_Lines__c</picklist>
+        <values>
+            <fullName>ISDN2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISDN30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSTN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

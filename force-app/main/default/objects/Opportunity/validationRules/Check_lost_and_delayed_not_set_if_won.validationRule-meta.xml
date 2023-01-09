@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_lost_and_delayed_not_set_if_won</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  TEXT( StageName) = &quot;Closed Won&quot;,
+  OR(
+    TEXT( Reason_Delayed_Detail__c ) != &quot;&quot;,
+    NOT(ISBLANK(Reason_Lost__c))
+  )
+)</errorConditionFormula>
+    <errorMessage>Please ensure that the reason lost and reason delayed are not set if the opportunity is won</errorMessage>
+</ValidationRule>

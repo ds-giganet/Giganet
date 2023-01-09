@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Forecast_GP__c</fullName>
+    <description>This field calculates the Expected Forecast GP. This is calculated by using the Total Contract GP value and multiplying this by the stage probability and then the Win Probability.</description>
+    <externalId>false</externalId>
+    <formula>(Total_Contract_GP__c  *  Probability)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field calculates the Expected Forecast GP. This is calculated by using the Total Contract GP value and multiplying this by the stage probability and then the Win Probability.</inlineHelpText>
+    <label>Total Forecast GP</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

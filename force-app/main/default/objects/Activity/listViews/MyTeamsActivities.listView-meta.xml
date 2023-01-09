@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyTeamsActivities</fullName>
+    <columns>TASK.SUBJECT</columns>
+    <columns>TASK.WHO_NAME</columns>
+    <columns>TASK.DUE_DATE</columns>
+    <columns>TASK.TYPE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>TASK.PRIORITY</columns>
+    <columns>TASK.STATUS</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>TASK.STATUS</field>
+        <operation>equals</operation>
+        <value>Not Started,In Progress,Waiting on someone else,Deferred</value>
+    </filters>
+    <label>My Team&apos;s Activities</label>
+</ListView>

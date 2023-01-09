@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_date_is_not_in_the_future</fullName>
+    <active>true</active>
+    <description>Check that the closed date is not in the future</description>
+    <errorConditionFormula>AND(
+  CloseDate &gt; TODAY(),
+  TEXT( StageName ) = &quot;Closed Won&quot;
+)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>Please ensure that the closed date is not in the future if you have set this to &quot;Closed - Won&quot;.</errorMessage>
+</ValidationRule>

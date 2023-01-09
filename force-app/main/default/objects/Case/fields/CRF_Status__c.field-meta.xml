@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRF_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>CRF Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Required: Sent</fullName>
+                <default>false</default>
+                <label>Required: Sent</label>
+            </value>
+            <value>
+                <fullName>Required: Completed</fullName>
+                <default>false</default>
+                <label>Required: Completed</label>
+            </value>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+            <value>
+                <fullName>Problem with Fields: General</fullName>
+                <default>false</default>
+                <label>Problem with Fields: General</label>
+            </value>
+            <value>
+                <fullName>Problem with Fields: Installation &amp; Location Issue</fullName>
+                <default>false</default>
+                <label>Problem with Fields: Installation &amp; Location Issue</label>
+            </value>
+            <value>
+                <fullName>Problem with Fields: Installation Location Hazard Issue</fullName>
+                <default>false</default>
+                <label>Problem with Fields: Installation Location Hazard Issue</label>
+            </value>
+            <value>
+                <fullName>Problem with Fields: Landlord/Wayleave Detail Issue</fullName>
+                <default>false</default>
+                <label>Problem with Fields: Landlord/Wayleave Detail Issue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

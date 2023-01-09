@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Fibre</fullName>
+    <active>true</active>
+    <description>Giganet ELITE and UltraBEAM services</description>
+    <label>Giganet Fibre</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Build</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECC Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit %26 Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Ordered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WFM Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wayleave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

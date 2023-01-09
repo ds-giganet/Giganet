@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jag_Low_Priority_Appointment_calls</fullName>
+    <columns>TASK.SUBJECT</columns>
+    <columns>TASK.WHO_NAME</columns>
+    <columns>TASK.DUE_DATE</columns>
+    <columns>TASK.TYPE</columns>
+    <columns>TASK.STATUS</columns>
+    <columns>Task_Outcome__c</columns>
+    <columns>TASK.PRIORITY</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>TASK.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TASK.PRIORITY</field>
+        <operation>equals</operation>
+        <value>Low</value>
+    </filters>
+    <filters>
+        <field>TASK.TYPE</field>
+        <operation>equals</operation>
+        <value>Appointment</value>
+    </filters>
+    <filters>
+        <field>TASK.STATUS</field>
+        <operation>equals</operation>
+        <value>Not Started,In Progress</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Jag</value>
+    </filters>
+    <label>Jag_Low Priority Appointment calls</label>
+</ListView>

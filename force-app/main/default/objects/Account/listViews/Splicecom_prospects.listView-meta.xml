@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Splicecom_prospects</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Current_Phone_System__c</columns>
+    <columns>Current_phonesys_Maintainer__c</columns>
+    <columns>Phone_System_Maintenance_Exp_Date__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Current_Phone_System__c</field>
+        <operation>equals</operation>
+        <value>SpliceCom</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Customer</value>
+    </filters>
+    <filters>
+        <field>M12_Services__c</field>
+        <operation>excludes</operation>
+        <value>Phone System Maintenance</value>
+    </filters>
+    <label>Splicecom prospects</label>
+</ListView>

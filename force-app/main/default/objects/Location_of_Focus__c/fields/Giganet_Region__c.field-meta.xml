@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Region__c</fullName>
+    <externalId>false</externalId>
+    <label>Giganet Region</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scotland</fullName>
+                <default>false</default>
+                <label>Scotland</label>
+            </value>
+            <value>
+                <fullName>North</fullName>
+                <default>false</default>
+                <label>North</label>
+            </value>
+            <value>
+                <fullName>North East</fullName>
+                <default>false</default>
+                <label>North East</label>
+            </value>
+            <value>
+                <fullName>Yorkshire</fullName>
+                <default>false</default>
+                <label>Yorkshire</label>
+            </value>
+            <value>
+                <fullName>Midlands</fullName>
+                <default>false</default>
+                <label>Midlands</label>
+            </value>
+            <value>
+                <fullName>East Anglia</fullName>
+                <default>false</default>
+                <label>East Anglia</label>
+            </value>
+            <value>
+                <fullName>South West</fullName>
+                <default>false</default>
+                <label>South West</label>
+            </value>
+            <value>
+                <fullName>South East</fullName>
+                <default>false</default>
+                <label>South East</label>
+            </value>
+            <value>
+                <fullName>Berks &amp; Bucks</fullName>
+                <default>false</default>
+                <label>Berks &amp; Bucks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

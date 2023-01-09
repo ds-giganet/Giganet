@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FTTP_Brownfields__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Brownfield sites have existing copper lines in place and also have Fibre to the Premises (FTTP) available.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Brownfield sites have existing copper lines in place and also have Fibre to the Premises (FTTP) available.</inlineHelpText>
+    <label>FTTP Brownfields</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

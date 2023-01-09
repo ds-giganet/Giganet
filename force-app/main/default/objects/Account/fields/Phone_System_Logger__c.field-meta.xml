@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_System_Logger__c</fullName>
+    <externalId>false</externalId>
+    <label>Phone System Logger</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SpliceCom Vision</fullName>
+                <default>false</default>
+                <label>SpliceCom Vision</label>
+            </value>
+            <value>
+                <fullName>SpliceCom SpliceLog Pro</fullName>
+                <default>false</default>
+                <label>SpliceCom SpliceLog Pro</label>
+            </value>
+            <value>
+                <fullName>PeakSuite</fullName>
+                <default>false</default>
+                <label>PeakSuite</label>
+            </value>
+            <value>
+                <fullName>OAK</fullName>
+                <default>false</default>
+                <label>OAK</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

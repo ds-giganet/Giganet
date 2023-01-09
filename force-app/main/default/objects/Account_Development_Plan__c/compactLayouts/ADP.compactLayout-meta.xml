@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADP</fullName>
+    <fields>Name</fields>
+    <fields>Won_Revenue__c</fields>
+    <fields>Sales_Target__c</fields>
+    <fields>Target_Achieved__c</fields>
+    <fields>of_Broadband_Orders__c</fields>
+    <fields>of_Ethernet_Orders__c</fields>
+    <fields>RTM_Completion__c</fields>
+    <label>ADP</label>
+</CompactLayout>

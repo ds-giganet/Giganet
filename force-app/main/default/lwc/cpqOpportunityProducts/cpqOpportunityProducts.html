@@ -1,0 +1,193 @@
+<template>
+    <!--loadingSpinner-start-->
+    <template if:true={isLoading}>
+        <div class="slds-box slds-p-around_none slds-m-horizontal_none">
+            <div class="spinner_class_div">
+                <lightning-spinner class="spinner_class" alternative-text="Loading" variant="brand">
+                </lightning-spinner>
+            </div>
+        </div>
+    </template>
+    <!--loadingSpinner-end-->
+    <!--headerArea-start-->
+    <lightning-layout class="slds-grid_vertical-align-center">
+        <lightning-layout-item flexibility="auto">
+            <lightning-button-group>
+                <lightning-button label="All" title="All"></lightning-button>
+                <lightning-button label="Connectivity" title="Connectivity"></lightning-button>
+                <lightning-button label="Equipment" title="Equipment"></lightning-button>
+                <lightning-button label="Licence" title="License"></lightning-button>
+                <lightning-button label="Location" title="Location"></lightning-button>
+                <lightning-button label="Supplier" title="Supplier"></lightning-button>
+            </lightning-button-group>
+        </lightning-layout-item>
+        <lightning-layout-item>
+            <lightning-button onclick={addProduct} label="Add Product"></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+    <!--headerArea-stop-->
+    <!--notificationArea-start-->
+    <template if:false={hasRows}>
+        <lightning-layout class="slds-box slds-p-around_none slds-m-top_small slds-grid_vertical-align-center">
+            <lightning-layout-item padding="around-small">
+                <lightning-icon icon-name="utility:warning"></lightning-icon>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto">
+                <p>There are no products defined for this opportunity.</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </template>
+    <!--notificationArea-end-->
+    <!--productsList-start-->
+    <template if:true={hasRows}>
+        <template for:each={rows} for:item="row">
+            <lightning-layout key={row.fields.Id.value} class="slds-box slds-p-around_none slds-m-top_small slds-grid_vertical-align-center">
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-layout class="slds-tabs_card slds-p-around_none slds-grid_vertical-align-center">
+                        <lightning-layout-item class="slds-p-left_small">
+                            <lightning-icon icon-name={row.fields.Icon__c.value} title={row.fields.Type__c.value}></lightning-icon>
+                        </lightning-layout-item>
+                        <lightning-layout-item flexibility="auto" padding="around-small">
+                            <p class="slds-text-title">{row.fields.Family__c.value}</p>
+                            <p class="slds-text-body_regular">
+                                <a value={row.fields.Id.value} onclick={viewProduct}>{row.fields.Name.value}</a>
+                            </p>
+                        </lightning-layout-item>
+                        <lightning-layout-item padding="around-small">
+                            <lightning-button-icon value={row.fields.Id.value} icon-name="utility:chevronup" title="Expand" variant="bare"></lightning-button-icon>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" padding="around-small">
+                    <template if:true={row.fields.Install_Amount__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Install Amount</p>
+                            <p class="slds-text-body_regular">
+                                <lightning-formatted-number value={row.fields.Install_Amount__c.value} format-style="currency" currency-code="GBP"></lightning-formatted-number>
+                            </p>
+                        </div>
+                    </template>
+                    <template if:true={row.fields.Install_Amount__c.value}><template if:true={row.fields.Install_GP__c.value}><div class="slds-p-top_x-small"></div></template></template>
+                    <template if:true={row.fields.Install_GP__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Install GP</p>
+                            <p class="slds-text-body_regular">
+                                <lightning-formatted-number value={row.fields.Install_GP__c.value} format-style="currency" currency-code="GBP"></lightning-formatted-number>
+                            </p>
+                        </div>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" padding="around-small">
+                    <template if:true={row.fields.Monthly_Revenue__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Monthly Revenue</p>
+                            <p class="slds-text-body_regular">
+                                <lightning-formatted-number value={row.fields.Monthly_Revenue__c.value} format-style="currency" currency-code="GBP"></lightning-formatted-number>
+                            </p>
+                        </div>
+                    </template>
+                    <template if:true={row.fields.Monthly_Revenue__c.value}><template if:true={row.fields.Monthly_GP__c.value}><div class="slds-p-top_x-small"></div></template></template>
+                    <template if:true={row.fields.Monthly_GP__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Monthly GP</p>
+                            <p class="slds-text-body_regular">
+                                <lightning-formatted-number value={row.fields.Monthly_GP__c.value} format-style="currency" currency-code="GBP"></lightning-formatted-number>
+                            </p>
+                        </div>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" padding="around-small">
+                    <template if:true={row.fields.Supplier_Name__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Supplier</p>
+                            <p class="slds-text-body_regular">
+                                <a value={row.fields.Id.value} onclick={viewProduct}>{row.fields.Supplier_Name__c.value}</a>
+                            </p>
+                        </div>
+                    </template>
+                    <template if:true={row.fields.Supplier_Name__c.value}><template if:true={row.fields.Location_Name__c.value}><div class="slds-p-top_x-small"></div></template></template>
+                    <template if:true={row.fields.Location_Name__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Location</p>
+                            <p class="slds-text-body_regular">
+                                <a value={row.fields.Id.value} onclick={viewProduct}>{row.fields.Location_Name__c.value}</a>
+                            </p>
+                        </div>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto" padding="around-small">
+                    <template if:true={row.fields.Quantity__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Quantity</p>
+                            <p class="slds-text-body_regular">
+                                <lightning-formatted-number value={row.fields.Quantity__c.value}></lightning-formatted-number>
+                            </p>
+                        </div>
+                    </template>
+                    <template if:true={row.fields.Quantity__c.value}><template if:true={row.fields.Term__c.value}><div class="slds-p-top_x-small"></div></template></template>
+                    <template if:true={row.fields.Term__c.value}>
+                        <div class="header-column">
+                            <p class="slds-text-title">Term</p>
+                            <p class="slds-text-body_regular">
+                                <lightning-formatted-number value={row.fields.Term__c.value}></lightning-formatted-number>
+                            </p>
+                        </div>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button-group>
+                        <lightning-button-icon value={row.fields.Id.value} onclick={addProduct} icon-name="utility:new" title="New"></lightning-button-icon>
+                        <lightning-button-icon value={row.fields.Id.value} onclick={editProduct} icon-name="utility:edit" title="Edit"></lightning-button-icon>
+                        <lightning-button-icon value={row} onclick={showProductDeleteModal} icon-name="utility:delete" title="Delete"></lightning-button-icon>
+                    </lightning-button-group>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </template>
+    <!--productsList-end-->
+    <!--footerArea-start-->
+    <lightning-layout class="slds-m-top_small slds-grid_vertical-align-center">
+        <lightning-layout-item>
+            <lightning-button-group>
+                <lightning-button label="10" title="10"></lightning-button>
+                <lightning-button label="20" title="20"></lightning-button>
+                <lightning-button label="50" title="50"></lightning-button>
+            </lightning-button-group>
+        </lightning-layout-item>
+        <lightning-layout-item flexibility="auto"></lightning-layout-item>
+        <lightning-layout-item>
+            <lightning-button-group>
+                <lightning-button label="First" title="First"></lightning-button>
+                <lightning-button label="Previous" title="Previous"></lightning-button>
+                <lightning-button label="Next" title="Next"></lightning-button>
+                <lightning-button label="Last" title="Last"></lightning-button>
+            </lightning-button-group>
+        </lightning-layout-item>
+    </lightning-layout>
+    <!--footerArea-stop-->
+    <!--deleteProductModal-start-->
+    <template if:true={productDeleteModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeProductModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 class="slds-text-heading_medium slds-hyphenate">Delete {product.fields.Name.value}</h2>
+                </header>
+                <lightning-layout class="slds-modal__content slds-grid_align-center">
+                    <lightning-layout-item flexibility="auto" padding="around-small">
+                        <p>Are you sure you want to delete {product.fields.Name.value}?</p>
+                    </lightning-layout-item>
+                </lightning-layout>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeProductModal} title="Cancel">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={deleteProduct} title="Delete">Delete</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!--deleteProductModal-end-->
+</template>

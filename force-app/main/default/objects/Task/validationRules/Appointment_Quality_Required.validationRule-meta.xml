@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Quality_Required</fullName>
+    <active>true</active>
+    <description>The appointment quality must be set when marking the task as completed when the subject contains the word appointment.</description>
+    <errorConditionFormula>AND(
+CONTAINS( Subject , &quot;Appointment&quot;),
+ISPICKVAL( Status , &quot;Completed&quot;),
+ISBLANK( TEXT(Appointment_Quality__c))
+)</errorConditionFormula>
+    <errorDisplayField>Appointment_Quality__c</errorDisplayField>
+    <errorMessage>Appointment Quality Required</errorMessage>
+</ValidationRule>

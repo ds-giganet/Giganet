@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cabinet_Area__c</fullName>
+    <description>Groups cohorts of Cityfibre RFS for sales and marketing targeting and for reporting and forecasting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>It is the 3rd most granular view of a collection of cityfibre properties. Level in which a forecasted release date is attached.</inlineHelpText>
+    <label>Cabinet Area</label>
+    <length>60</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_industry_provided_if_qualified</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  OR(
+    TEXT(Status) = &quot;Qualified&quot;,
+    TEXT(Status) = &quot;Contacted&quot;,
+    TEXT(Status) = &quot;Converted&quot;
+  ),
+  OR(
+    TEXT(Industry) = &quot;Incomplete&quot;,
+    TEXT(Industry) = &quot;&quot;
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Industry</errorDisplayField>
+    <errorMessage>Please ensure the industry has been set for the lead.</errorMessage>
+</ValidationRule>

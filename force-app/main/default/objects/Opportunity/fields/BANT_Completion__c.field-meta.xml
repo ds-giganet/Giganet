@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BANT_Completion__c</fullName>
+    <externalId>false</externalId>
+    <formula>/* this starts the Image function &amp; asks for a green swatch 10 pixels high */
+
+IMAGE(&quot;/img/samples/color_green.gif&quot;,&quot;green&quot;, 10 , 
+
+/* this calculates the number of pixels in width to give completed items */
+
+      (Completed_BANT_Scores__c * 10)
+
+/* this closes the image function and appends it to the next bit */
+
+      )&amp; 
+
+/* this starts the Image function &amp; asks for a red swatch 10 pixels high */
+
+IMAGE(&quot;/img/samples/color_red.gif&quot;,&quot;red&quot;, 10 , 
+
+/* this calculates the number of pixels in width to give incomplete items */
+
+    ((Total_BANT_Scores__c - Completed_BANT_Scores__c)) * 10
+
+/* this closes the image function and appends it to the next bit */
+
+    ) &amp; 
+
+/* this returns the percentage complete in text */
+
+&quot; &quot;&amp; TEXT (ROUND((( Completed_BANT_Scores__c / Total_BANT_Scores__c ) * 100 
+
+),0)) &amp; &quot;%&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BANT Completion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

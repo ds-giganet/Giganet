@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sarah_activites_calls</fullName>
+    <columns>TASK.SUBJECT</columns>
+    <columns>TASK.WHO_NAME</columns>
+    <columns>TASK.DUE_DATE</columns>
+    <columns>TASK.TYPE</columns>
+    <columns>TASK.STATUS</columns>
+    <columns>TASK.PRIORITY</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>TASK.LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>TASK.SUBJECT</field>
+        <operation>contains</operation>
+        <value>Cleanse</value>
+    </filters>
+    <filters>
+        <field>TASK.STATUS</field>
+        <operation>contains</operation>
+        <value>Not Started</value>
+    </filters>
+    <label>sarah activites and calls</label>
+</ListView>

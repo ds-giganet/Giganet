@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Interest_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(INCLUDES( Lead_Interest__c , &quot;Other&quot;),
+ISBLANK( Lead_Interest_Other__c ))</errorConditionFormula>
+    <errorDisplayField>Lead_Interest_Other__c</errorDisplayField>
+    <errorMessage>Please enter other lead interest</errorMessage>
+</ValidationRule>

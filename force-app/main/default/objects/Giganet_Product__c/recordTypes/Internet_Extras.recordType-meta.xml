@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internet_Extras</fullName>
+    <active>true</active>
+    <label>Internet Extras</label>
+    <picklistValues>
+        <picklist>Router__c</picklist>
+        <values>
+            <fullName>Juniper EX2300-C-12T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper EX4300-24T 10GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper SRX300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juniper SRX340</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuperHub 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UltraHub 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supplier__c</picklist>
+        <values>
+            <fullName>Ubiquiti</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Access Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firewall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

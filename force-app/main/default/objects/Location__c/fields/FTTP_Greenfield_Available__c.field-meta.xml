@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FTTP_Greenfield_Available__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Greenfield sites don&apos;t have any copper lines, so FTTP is your main option.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Greenfield sites don&apos;t have any copper lines, so FTTP is your main option.</inlineHelpText>
+    <label>FTTP Greenfield Available</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

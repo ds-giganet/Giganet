@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maintenance__c</fullName>
+    <externalId>false</externalId>
+    <label>[Delete] Maintenance</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Splicecom-Gold</fullName>
+                <default>false</default>
+                <label>Splicecom-Gold</label>
+            </value>
+            <value>
+                <fullName>Splicecom-Silver</fullName>
+                <default>false</default>
+                <label>Splicecom-Silver</label>
+            </value>
+            <value>
+                <fullName>Splicecom-Phones</fullName>
+                <default>false</default>
+                <label>Splicecom-Phones</label>
+            </value>
+            <value>
+                <fullName>ShoreTel-Gold</fullName>
+                <default>false</default>
+                <label>ShoreTel-Gold</label>
+            </value>
+            <value>
+                <fullName>ShoreTel-Silver</fullName>
+                <default>false</default>
+                <label>ShoreTel-Silver</label>
+            </value>
+            <value>
+                <fullName>ShoreTel-Bronze</fullName>
+                <default>false</default>
+                <label>ShoreTel-Bronze</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manufacturer__c</fullName>
+    <externalId>false</externalId>
+    <label>[Delete] Manufacturer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BT</fullName>
+                <default>false</default>
+                <label>BT</label>
+            </value>
+            <value>
+                <fullName>Cisco</fullName>
+                <default>false</default>
+                <label>Cisco</label>
+            </value>
+            <value>
+                <fullName>Cisco Meraki</fullName>
+                <default>false</default>
+                <label>Cisco Meraki</label>
+            </value>
+            <value>
+                <fullName>Comm21</fullName>
+                <default>false</default>
+                <label>Comm21</label>
+            </value>
+            <value>
+                <fullName>Juniper</fullName>
+                <default>false</default>
+                <label>Juniper</label>
+            </value>
+            <value>
+                <fullName>M12 Solutions</fullName>
+                <default>false</default>
+                <label>M12 Solutions</label>
+            </value>
+            <value>
+                <fullName>Mitel</fullName>
+                <default>false</default>
+                <label>Mitel</label>
+            </value>
+            <value>
+                <fullName>Plantronics</fullName>
+                <default>false</default>
+                <label>Plantronics</label>
+            </value>
+            <value>
+                <fullName>Splicecom</fullName>
+                <default>false</default>
+                <label>Splicecom</label>
+            </value>
+            <value>
+                <fullName>Yealink</fullName>
+                <default>false</default>
+                <label>Yealink</label>
+            </value>
+            <value>
+                <fullName>Misc</fullName>
+                <default>false</default>
+                <label>Misc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

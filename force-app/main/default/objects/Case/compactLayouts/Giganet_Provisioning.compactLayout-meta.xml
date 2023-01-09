@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Provisioning</fullName>
+    <fields>AccountId</fields>
+    <fields>Zendesk_Support_Ticket_ID__c</fields>
+    <fields>GN_Provisioning_Status__c</fields>
+    <fields>Priority</fields>
+    <fields>Status</fields>
+    <fields>Zendesk_Support_Ticket_Assignee_Name__c</fields>
+    <label>Giganet Provisioning</label>
+</CompactLayout>

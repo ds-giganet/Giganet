@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mel_s_active_contracts</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>Opportunity__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>Contract_Type__c</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <columns>CONTRACT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Mel&apos;s contracts</label>
+</ListView>

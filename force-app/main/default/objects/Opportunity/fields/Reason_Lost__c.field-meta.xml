@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Lost__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Lost Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Budget lost</fullName>
+                <default>false</default>
+                <label>Budget lost</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Cancelled - ECCs declined</fullName>
+                <default>false</default>
+                <label>Cancelled - ECCs declined</label>
+            </value>
+            <value>
+                <fullName>Cancelled - Wayleave Dispute</fullName>
+                <default>false</default>
+                <label>Cancelled - Wayleave Dispute</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Competition better solution</fullName>
+                <default>false</default>
+                <label>Competition better solution</label>
+            </value>
+            <value>
+                <fullName>Competition existing relationship</fullName>
+                <default>false</default>
+                <label>Competition existing relationship</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Existing supplier</fullName>
+                <default>false</default>
+                <label>Existing supplier</label>
+            </value>
+            <value>
+                <fullName>In contract</fullName>
+                <default>false</default>
+                <label>In contract</label>
+            </value>
+            <value>
+                <fullName>Price too little</fullName>
+                <default>false</default>
+                <label>Price too little</label>
+            </value>
+            <value>
+                <fullName>Price too much</fullName>
+                <default>false</default>
+                <label>Price too much</label>
+            </value>
+            <value>
+                <fullName>Product or Service not good fit</fullName>
+                <default>false</default>
+                <label>Product or Service not good fit</label>
+            </value>
+            <value>
+                <fullName>Stale</fullName>
+                <default>false</default>
+                <label>Stale</label>
+            </value>
+            <value>
+                <fullName>Superseded</fullName>
+                <default>false</default>
+                <label>Superseded</label>
+            </value>
+            <value>
+                <fullName>Too late</fullName>
+                <default>false</default>
+                <label>Too late</label>
+            </value>
+            <value>
+                <fullName>Credit Check Failed</fullName>
+                <default>false</default>
+                <label>Credit Check Failed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

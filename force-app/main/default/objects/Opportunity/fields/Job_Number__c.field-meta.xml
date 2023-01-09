@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Sage Job Costing Number</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Sage Job Costing Number</inlineHelpText>
+    <label>Job Number</label>
+    <length>6</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

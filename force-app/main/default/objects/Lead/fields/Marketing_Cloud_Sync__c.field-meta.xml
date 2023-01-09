@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Cloud_Sync__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(OR(
+ISPICKVAL(LeadSource , &quot;Data - Free&quot;),
+ISPICKVAL(LeadSource , &quot;Data - Paid&quot;),
+ISPICKVAL(LeadSource , &quot;Paid Lead Provider&quot;),
+ISPICKVAL( Status, &quot;Disqualified&quot;),
+ISBLANK(Email), 
+IF(HasOptedOutOfEmail = True, True, False),
+IF(IsConverted = False, False, True)
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Marketing Cloud Sync</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Request</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Giganet_Sales_Support</compactLayoutAssignment>
+    <label>Contract Request</label>
+    <picklistValues>
+        <picklist>Term__c</picklist>
+        <values>
+            <fullName>1 Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

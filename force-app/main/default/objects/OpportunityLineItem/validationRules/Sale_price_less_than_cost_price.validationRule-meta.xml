@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sale_price_less_than_cost_price</fullName>
+    <active>true</active>
+    <errorConditionFormula>UnitPrice &lt;    Cost_Price_Purchase__c</errorConditionFormula>
+    <errorDisplayField>UnitPrice</errorDisplayField>
+    <errorMessage>You cannot sell a product for less than cost price</errorMessage>
+</ValidationRule>

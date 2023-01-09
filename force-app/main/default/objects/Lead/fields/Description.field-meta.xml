@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description</fullName>
+    <inlineHelpText>Please complete with any background information on the lead, company, technology used or opportunity value/description.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+</CustomField>

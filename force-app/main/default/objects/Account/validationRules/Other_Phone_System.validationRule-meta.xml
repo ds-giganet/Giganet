@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Phone_System</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Current_Phone_System__c, &quot;Other&quot;), 
+ISBLANK( Other_Phone_System__c))</errorConditionFormula>
+    <errorDisplayField>Other_Phone_System__c</errorDisplayField>
+    <errorMessage>Please specify &apos;Other&apos; Current phone system</errorMessage>
+</ValidationRule>

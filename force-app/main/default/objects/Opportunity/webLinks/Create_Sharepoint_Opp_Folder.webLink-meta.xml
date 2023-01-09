@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Sharepoint_Opp_Folder</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Create Sharepoint Folder</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://api.m12.net.uk/76n0as89dnf70as98d7nf9as8d7fn09as86df0bp9as6bdpf98a6/opportunity/?account_name={!Opportunity.Account}&amp;account_id={!CASESAFEID(Opportunity.AccountId)}&amp;opp_name={!Opportunity.Name}&amp;opp_id={!CASESAFEID(Opportunity.Id)}&amp;opp_closedate={!Opportunity.CloseDate}</url>
+</WebLink>

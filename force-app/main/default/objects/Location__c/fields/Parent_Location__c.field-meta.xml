@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This allows us to relate a location to the correct location. Additionally, it allows us to be able to quckly do roll up summaries of the child records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup field on the location record to the different area type. e.g. market area or region.</inlineHelpText>
+    <label>Parent Location</label>
+    <referenceTo>Location__c</referenceTo>
+    <relationshipLabel>Related Locations</relationshipLabel>
+    <relationshipName>Related_Locations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

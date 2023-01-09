@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Telecom_Applications__c</fullName>
+    <description>Please advise which telecoms applications are used with the phone system currently in place</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please advise which telecoms applications are used with the phone system currently in place</inlineHelpText>
+    <label>Current Telecom Applications</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto Attendant</fullName>
+                <default>false</default>
+                <label>Auto Attendant</label>
+            </value>
+            <value>
+                <fullName>Contact Centre</fullName>
+                <default>false</default>
+                <label>Contact Centre</label>
+            </value>
+            <value>
+                <fullName>Mobility</fullName>
+                <default>false</default>
+                <label>Mobility</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>Recording</fullName>
+                <default>false</default>
+                <label>Recording</label>
+            </value>
+            <value>
+                <fullName>Remote Working</fullName>
+                <default>false</default>
+                <label>Remote Working</label>
+            </value>
+            <value>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+                <label>Voicemail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

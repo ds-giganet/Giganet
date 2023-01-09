@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_renewal_period_set</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+Text(Status) = &quot;Activated&quot;, 
+ISBLANK(  TEXT(Auto_renewal_period__c)  )
+)</errorConditionFormula>
+    <errorDisplayField>Auto_renewal_period__c</errorDisplayField>
+    <errorMessage>Please ensure that the contract auto renewal period is set before activating the contract</errorMessage>
+</ValidationRule>

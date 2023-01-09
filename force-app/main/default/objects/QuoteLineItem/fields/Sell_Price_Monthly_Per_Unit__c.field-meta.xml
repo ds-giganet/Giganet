@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sell_Price_Monthly_Per_Unit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+ BLANKVALUE( Sales_Price_Monthly__c , 0) == 0, 
+ List_Price_Rental__c , 
+ Sales_Price_Monthly__c 
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sell Price Monthly Per Unit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

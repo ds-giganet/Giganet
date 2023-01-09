@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualified_reason</fullName>
+    <active>true</active>
+    <description>Ensure Disqualified Reason is provided if Lead Status is Disqualified</description>
+    <errorConditionFormula>AND(
+  TEXT(Status) = &quot;Disqualified&quot;,
+  TEXT( Disqualified_Reason__c ) = &quot;&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Disqualified_Reason__c</errorDisplayField>
+    <errorMessage>You must specify a disqualified reason if the lead is disqualified.</errorMessage>
+</ValidationRule>

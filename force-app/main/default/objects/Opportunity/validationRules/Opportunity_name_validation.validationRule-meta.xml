@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_name_validation</fullName>
+    <active>true</active>
+    <description>Opportunity name validation</description>
+    <errorConditionFormula>FIND(&apos;/&apos;, Name)  &lt;&gt; 0</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Please ensure the opportunity name does not contain a forward slash [/] otherwise the Y drive folder creation process will fail.</errorMessage>
+</ValidationRule>

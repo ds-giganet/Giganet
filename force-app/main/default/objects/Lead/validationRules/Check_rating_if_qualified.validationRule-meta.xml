@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_rating_if_qualified</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  OR(
+    TEXT( Status) = &quot;Qualified&quot;,
+    TEXT( Status) = &quot;Converted&quot;
+  ),
+  OR(
+    TEXT(Rating) = &quot;Incomplete&quot;,
+    TEXT(Rating) = &quot;&quot;
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Rating</errorDisplayField>
+    <errorMessage>Please ensure the rating is set if the lead is qualified or converted.
+Hot - decision within 2 months. Warm - decision within 2-6 months. Cold - longer/unknown.</errorMessage>
+</ValidationRule>

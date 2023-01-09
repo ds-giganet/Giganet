@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delay_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Delay Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cannot Serve - API Access</fullName>
+                <default>false</default>
+                <label>Cannot Serve - API Access</label>
+            </value>
+            <value>
+                <fullName>Cannot Serve - Layer 2</fullName>
+                <default>false</default>
+                <label>Cannot Serve - Layer 2</label>
+            </value>
+            <value>
+                <fullName>Cannot Serve - Other</fullName>
+                <default>false</default>
+                <label>Cannot Serve - Other</label>
+            </value>
+            <value>
+                <fullName>Holding - Network upgrade required</fullName>
+                <default>false</default>
+                <label>Holding - Network upgrade required</label>
+            </value>
+            <value>
+                <fullName>Holding - Developing systems</fullName>
+                <default>false</default>
+                <label>Holding - Developing systems</label>
+            </value>
+            <value>
+                <fullName>Holding - Company Change</fullName>
+                <default>false</default>
+                <label>Holding - Company Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

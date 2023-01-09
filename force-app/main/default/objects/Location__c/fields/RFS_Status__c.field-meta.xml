@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFS_Status__c</fullName>
+    <description>Help us to suppress a property against sales and marketing activity. Helps to identify and tailor comms for new acquisition.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Denotes the status of sale against the property. (NOT_RFS_4 to NOT_RFS_1, RFS_0 to RFS_4). See cityfibre DR/RFS status matrix for reference.</inlineHelpText>
+    <label>RFS Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NOT_RFS_4</fullName>
+                <default>false</default>
+                <label>NOT_RFS_4</label>
+            </value>
+            <value>
+                <fullName>NOT_RFS_3</fullName>
+                <default>false</default>
+                <label>NOT_RFS_3</label>
+            </value>
+            <value>
+                <fullName>NOT_RFS_2</fullName>
+                <default>false</default>
+                <label>NOT_RFS_2</label>
+            </value>
+            <value>
+                <fullName>NOT_RFS_1</fullName>
+                <default>false</default>
+                <label>NOT_RFS_1</label>
+            </value>
+            <value>
+                <fullName>RFS_0</fullName>
+                <default>false</default>
+                <label>RFS_0</label>
+            </value>
+            <value>
+                <fullName>RFS_1</fullName>
+                <default>false</default>
+                <label>RFS_1</label>
+            </value>
+            <value>
+                <fullName>RFS_2</fullName>
+                <default>false</default>
+                <label>RFS_2</label>
+            </value>
+            <value>
+                <fullName>RFS_3</fullName>
+                <default>false</default>
+                <label>RFS_3</label>
+            </value>
+            <value>
+                <fullName>RFS_4</fullName>
+                <default>false</default>
+                <label>RFS_4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

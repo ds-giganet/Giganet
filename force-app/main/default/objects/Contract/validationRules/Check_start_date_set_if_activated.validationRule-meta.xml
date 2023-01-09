@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_start_date_set_if_activated</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  Text(Status) = &quot;Activated&quot;,
+  ISBLANK( StartDate )
+)</errorConditionFormula>
+    <errorDisplayField>StartDate</errorDisplayField>
+    <errorMessage>Please ensure that the contract start date is completed before activating the contract.</errorMessage>
+</ValidationRule>

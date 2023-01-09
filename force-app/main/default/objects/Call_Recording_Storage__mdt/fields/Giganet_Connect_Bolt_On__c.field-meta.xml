@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giganet_Connect_Bolt_On__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Giganet Connect Bolt On</label>
+    <referenceTo>Giganet_Connect_Bolt_On__mdt</referenceTo>
+    <relationshipLabel>Call Recording Storage</relationshipLabel>
+    <relationshipName>Call_Recording_Storage</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

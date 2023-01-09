@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Business</fullName>
+    <active>true</active>
+    <label>Channel Business</label>
+    <picklistValues>
+        <picklist>Product_Area__c</picklist>
+        <values>
+            <fullName>DBX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giganet Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoretel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Splicecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wireless</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Aborted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Canvasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Experiential Vehicles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

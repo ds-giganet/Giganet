@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating</fullName>
+    <inlineHelpText>Hot - Decision within 2 months. 
+Warm - Decision 2-6 months. 
+Cold - Unknown</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+</CustomField>

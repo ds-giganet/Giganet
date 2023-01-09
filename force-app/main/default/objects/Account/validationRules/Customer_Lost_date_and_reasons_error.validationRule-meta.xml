@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Lost_date_and_reasons_error</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+TEXT(Type) = &quot;Customer&quot;,
+NOT(ISBLANK(Customer_Lost_Date__c))),
+
+AND(
+TEXT(Type) = &quot;Customer&quot;,
+NOT(ISBLANK(TEXT(Reason_Lost__c))))
+)</errorConditionFormula>
+    <errorMessage>Please clear the customer lost date</errorMessage>
+</ValidationRule>

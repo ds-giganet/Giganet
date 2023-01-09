@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Delayed_Detail__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please complete the reason the opportunity is in delay.</inlineHelpText>
+    <label>Reason Delayed Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer no Resource</fullName>
+                <default>false</default>
+                <label>Customer no Resource</label>
+            </value>
+            <value>
+                <fullName>Customer Request Other</fullName>
+                <default>false</default>
+                <label>Customer Request Other</label>
+            </value>
+            <value>
+                <fullName>Customer Site Move Delayed</fullName>
+                <default>false</default>
+                <label>Customer Site Move Delayed</label>
+            </value>
+            <value>
+                <fullName>Customer Waiting for Budget</fullName>
+                <default>false</default>
+                <label>Customer Waiting for Budget</label>
+            </value>
+            <value>
+                <fullName>Customer Waiting on Prerequisite</fullName>
+                <default>false</default>
+                <label>Customer Waiting on Prerequisite</label>
+            </value>
+            <value>
+                <fullName>M12 no Resource</fullName>
+                <default>false</default>
+                <label>M12 no Resource</label>
+            </value>
+            <value>
+                <fullName>M12 Other</fullName>
+                <default>false</default>
+                <label>M12 Other</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

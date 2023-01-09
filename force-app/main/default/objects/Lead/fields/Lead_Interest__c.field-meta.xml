@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phone system on premise</fullName>
+                <default>false</default>
+                <label>Phone system on premise</label>
+            </value>
+            <value>
+                <fullName>Phone System Hybrid</fullName>
+                <default>false</default>
+                <label>Phone System Hybrid</label>
+            </value>
+            <value>
+                <fullName>Phone system hosted</fullName>
+                <default>false</default>
+                <label>Phone system hosted</label>
+            </value>
+            <value>
+                <fullName>Phone system maintenance</fullName>
+                <default>false</default>
+                <label>Phone system maintenance</label>
+            </value>
+            <value>
+                <fullName>Contact Centre</fullName>
+                <default>false</default>
+                <label>Contact Centre</label>
+            </value>
+            <value>
+                <fullName>Recording</fullName>
+                <default>false</default>
+                <label>Recording</label>
+            </value>
+            <value>
+                <fullName>UC</fullName>
+                <default>false</default>
+                <label>UC</label>
+            </value>
+            <value>
+                <fullName>SIP</fullName>
+                <default>false</default>
+                <label>SIP</label>
+            </value>
+            <value>
+                <fullName>BT lines &amp; calls</fullName>
+                <default>false</default>
+                <label>BT lines &amp; calls</label>
+            </value>
+            <value>
+                <fullName>Broadband</fullName>
+                <default>false</default>
+                <label>Broadband</label>
+            </value>
+            <value>
+                <fullName>Ethernet</fullName>
+                <default>false</default>
+                <label>Ethernet</label>
+            </value>
+            <value>
+                <fullName>Mobility</fullName>
+                <default>false</default>
+                <label>Mobility</label>
+            </value>
+            <value>
+                <fullName>Mobiles</fullName>
+                <default>false</default>
+                <label>Mobiles</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+                <label>Wireless</label>
+            </value>
+            <value>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+                <label>Inbound</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>
